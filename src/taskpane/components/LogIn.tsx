@@ -1,8 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import * as React from "react";
 import { Image, Label, Input, Subtitle1, Button, Body1 } from "@fluentui/react-components";
+import { useNavigate } from "react-router-dom";
 
 const LogIn = () => {
+  const navigate = useNavigate();
+
+  const handleClickButton = () => {
+    navigate("/SignIn");
+  };
+
   return (
     <>
       <div
@@ -36,7 +43,10 @@ const LogIn = () => {
           </div>
           <div style={{ padding: "4px 0px" }}>
             <Body1>
-              Don't have an account? <Body1 style={{ color: "#51A3DA", cursor: "pointer" }}>Create One!</Body1>
+              Don't have an account?{" "}
+              <Body1 onClick={handleClickButton} style={{ color: "#51A3DA", cursor: "pointer" }}>
+                Create One!
+              </Body1>
             </Body1>
           </div>
         </div>

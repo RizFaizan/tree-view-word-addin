@@ -1,8 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import * as React from "react";
 import { Image, Label, Input, Subtitle1, Button, Body1 } from "@fluentui/react-components";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const navigate = useNavigate();
+
+  const handleClickButton = () => {
+    navigate("/LogIn");
+  };
+
   return (
     <>
       <div
@@ -39,12 +46,15 @@ const SignIn = () => {
           </div>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "10px" }}>
             <Button appearance="primary" shape="circular">
-              Sign In
+              Sign Up
             </Button>
           </div>
           <div style={{ padding: "4px 0px" }}>
             <Body1>
-              Already have an account? <Body1 style={{ color: "#51A3DA", cursor: "pointer" }}>Log In!</Body1>
+              Already have an account?{" "}
+              <Body1 onClick={handleClickButton} style={{ color: "#51A3DA", cursor: "pointer" }}>
+                Log In!
+              </Body1>
             </Body1>
           </div>
         </div>
