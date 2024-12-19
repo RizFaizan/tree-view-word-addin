@@ -1,12 +1,12 @@
 import React from "react";
-import SignIn from "./SignIn";
-// import Home from "./LogIn";
+import LogIn from "./LogIn";
+// import SignIn from "./SignIn";
 
 const App = () => {
   return (
     <>
-      {/* <LogIn /> */}
-      <SignIn />
+      <LogIn />
+      {/* <SignIn /> */}
     </>
   );
 };

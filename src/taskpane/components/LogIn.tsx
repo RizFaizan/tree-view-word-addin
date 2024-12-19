@@ -11,21 +11,21 @@ const LogIn = () => {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
-          paddingTop: "10px",
+          paddingTop: "20px",
         }}
       >
         <div>
-          <Image alt="Addin expert Logo" shape="circular" src=".\assets\AE Blue-Grade.png" height={150} width={150} />
+          <Image alt="Addin expert Logo" shape="circular" src=".\assets\AE Blue-Grade.png" height={120} width={120} />
         </div>
-        <div style={{ padding: "10px 40px", textAlign: "center" }}>
-          <Subtitle1 as="h3">Explore the creators of All Addin Projects.</Subtitle1>
+        <div style={{ width: "230px", textAlign: "center" }}>
+          <Subtitle1 as="h3">Welcome Back!! LogIn to your Account Quickly.</Subtitle1>
         </div>
         <div style={{ width: "240px" }}>
-          <div style={{ display: "flex", flexDirection: "column", padding: "10px 0px" }}>
+          <div style={{ display: "flex", flexDirection: "column", padding: "10px 0px 0px 0px" }}>
             <Label>Email :</Label>
             <Input type="email" />
           </div>
-          <div style={{ display: "flex", flexDirection: "column", padding: "6px 0px" }}>
+          <div style={{ display: "flex", flexDirection: "column", padding: "10px 0px 0px 0px" }}>
             <Label>Password :</Label>
             <Input type="password" />
           </div>
