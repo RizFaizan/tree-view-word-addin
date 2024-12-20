@@ -8,7 +8,6 @@ import Notfound from "./Notfound";
 const App = () => {
   return (
     <>
-      {/* <LogIn /> */}
       <Router>
         <Routes>
           <Route path="/" element={<LogIn />} />

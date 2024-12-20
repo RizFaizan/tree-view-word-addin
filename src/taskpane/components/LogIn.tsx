@@ -30,11 +30,11 @@ const LogIn = () => {
         <div style={{ width: "240px" }}>
           <div style={{ display: "flex", flexDirection: "column", padding: "10px 0px 0px 0px" }}>
             <Label>Email :</Label>
-            <Input type="email" />
+            <Input type="email" required />
           </div>
           <div style={{ display: "flex", flexDirection: "column", padding: "10px 0px 0px 0px" }}>
             <Label>Password :</Label>
-            <Input type="password" />
+            <Input type="password" required />
           </div>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "10px" }}>
             <Button appearance="primary" shape="circular">

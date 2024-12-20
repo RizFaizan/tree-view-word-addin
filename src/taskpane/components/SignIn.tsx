@@ -1,9 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import * as React from "react";
-import { Image, Label, Input, Subtitle1, Button, Body1 } from "@fluentui/react-components";
+import { useState } from "react";
+import { Image, Label, Input, Subtitle1, Button, Body1, Checkbox } from "@fluentui/react-components";
 import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+
   const navigate = useNavigate();
 
   const handleClickButton = () => {
@@ -44,8 +51,12 @@ const SignIn = () => {
             <Label>Confirm Password :</Label>
             <Input type="password" />
           </div>
+          <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", padding: "10px 0px 0px 0px" }}>
+            <Checkbox size="large" onChange={handleCheckboxChange} />
+            <Body1>By clicking, you agree to our terms and conditions.</Body1>
+          </div>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "10px" }}>
-            <Button appearance="primary" shape="circular">
+            <Button appearance="primary" shape="circular" disabled={!isChecked}>
               Sign Up
             </Button>
           </div>
