@@ -31,12 +31,17 @@
     "@fluentui/react-components": "^9.46.8",
     "@fluentui/react-icons": "^2.0.232",
     "@types/react-router-dom": "^5.3.3",
+    "autoprefixer": "^10.4.20",
     "core-js": "^3.36.0",
+    "css-loader": "^7.1.2",
     "es6-promise": "^4.2.8",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.0.2",
-    "regenerator-runtime": "^0.14.1"
+    "regenerator-runtime": "^0.14.1",
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
